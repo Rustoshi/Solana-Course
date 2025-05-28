@@ -1,7 +1,7 @@
 import "dotenv/config";
-import { getKeypairFromEnvironment } from "@solana-developers/helpers";
+import 'dotenv/config';
 
-const keypair = getKeypairFromEnvironment("SECRET_KEY");
+const keypair = process.env.SECRET_KEY;
 
 console.log(
   `✅ Finished! We've loaded our secret key securely, using an env file!`,
